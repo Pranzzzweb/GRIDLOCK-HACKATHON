@@ -1,0 +1,174 @@
+.history {
+  min-height: calc(100vh - 70px);
+  padding: 60px 0;
+  background-color: #f9fafb;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: #222222;
+}
+
+.header p {
+  font-size: 16px;
+  color: #5b6575;
+  margin: 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.historyCard {
+  padding: 24px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cardInfo {
+  flex: 1;
+}
+
+.fileName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0 0 8px 0;
+  word-break: break-all;
+}
+
+.metadata {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.datetime {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #5b6575;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
+
+.resultItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resultLabel {
+  font-size: 12px;
+  color: #5b6575;
+  font-weight: 500;
+}
+
+.resultValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.emptyState {
+  padding: 80px 40px;
+}
+
+.emptyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.emptyIcon {
+  font-size: 64px;
+}
+
+.emptyContent h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222222;
+  margin: 0;
+}
+
+.emptyContent p {
+  font-size: 14px;
+  color: #5b6575;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .history {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+  }
+
+  .historyCard {
+    padding: 16px;
+  }
+}
