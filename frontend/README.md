@@ -97,16 +97,6 @@ src/
 
 ### 🎨 Design System
 
-#### Color Palette
-
-- **Primary**: `#0F4C81` - Government blue
-- **Secondary**: `#1D3557` - Dark blue
-- **Accent**: `#2A9D8F` - Teal
-- **Background**: `#F5F7FA` - Light gray
-- **Success**: `#2E7D32` - Green
-- **Warning**: `#ED6C02` - Orange
-- **Danger**: `#C62828` - Red
-
 #### Typography
 
 - **Font**: Inter (Google Fonts)
