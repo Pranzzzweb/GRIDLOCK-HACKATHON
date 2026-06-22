@@ -1,0 +1,9 @@
+ultralytics
+easyocr
+flask
+reportlab
+opencv-python-headless
+pillow
+numpy
+pandas
+gunicorn
