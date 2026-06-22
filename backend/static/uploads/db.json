@@ -1,0 +1,45 @@
+[
+    {
+        "id": "0431e9042a8b",
+        "challan_id": "CH-0431E9042A8B",
+        "timestamp": "2026-06-23 02:47:56",
+        "image_path": "/static/uploads/orig_0431e9042a8b.jpg",
+        "annotated_image": "/static/uploads/annotated_0431e9042a8b.jpg",
+        "plate_text": "UNKNOWN",
+        "ocr_confidence": 0.0,
+        "violations": [
+            {
+                "type": "Helmet Non-Compliance",
+                "confidence": 0.43989092111587524,
+                "box": [
+                    108.32063674926758,
+                    13.18072194386398,
+                    318.9871406555176,
+                    453.9183791140292
+                ],
+                "severity": "High",
+                "plate_text": "UNKNOWN",
+                "ocr_confidence": 0.0,
+                "plate_box": null
+            },
+            {
+                "type": "Helmet Non-Compliance",
+                "confidence": 0.354882150888443,
+                "box": [
+                    2.507467269897461,
+                    5.223514823565729,
+                    318.17824363708496,
+                    451.7115630639722
+                ],
+                "severity": "High",
+                "plate_text": "UNKNOWN",
+                "ocr_confidence": 0.0,
+                "plate_box": null
+            }
+        ],
+        "challan_path": "/static/uploads/challan_0431e9042a8b.pdf",
+        "motorcyclist_count": 2,
+        "helmet_count": 2,
+        "plate_count": 0
+    }
+]
