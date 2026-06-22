@@ -7,3 +7,5 @@ pillow
 numpy
 pandas
 gunicorn
+flask-cors
+torch
