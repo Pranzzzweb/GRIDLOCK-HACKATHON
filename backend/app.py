@@ -4,6 +4,13 @@ import datetime
 import json
 from flask import Flask, request, jsonify, render_template, send_from_directory
 from werkzeug.utils import secure_filename
+from flask_cors import CORS
+
+from flask import Flask, request, jsonify, render_template, send_from_directory
+from flask_cors import CORS
+
+app = Flask(__name__, template_folder="templates", static_folder="static")
+CORS(app)
 
 import config
 import utils
@@ -253,12 +260,13 @@ def clear_db():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/static/uploads/<path:filename>")
+def uploaded_files(filename):
+    return send_from_directory(config.UPLOAD_FOLDER, filename)
+
 if __name__ == "__main__":
     init_db()
     # Run the application locally
     app.run(host="0.0.0.0", port=5000, debug=True)
 from flask import send_from_directory
 
-@app.route("/static/uploads/<path:filename>")
-def uploaded_files(filename):
-    return send_from_directory(config.UPLOAD_FOLDER, filename)
