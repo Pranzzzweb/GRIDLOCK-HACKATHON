@@ -9,8 +9,7 @@ from flask_cors import CORS
 from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 
-app = Flask(__name__, template_folder="templates", static_folder="static")
-CORS(app)
+
 
 import config
 import utils
@@ -18,6 +17,7 @@ import model
 import report
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
+CORS(app)
 app.config["UPLOAD_FOLDER"] = config.UPLOAD_FOLDER
 app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024  # 16MB max upload size
 
@@ -268,5 +268,4 @@ if __name__ == "__main__":
     init_db()
     # Run the application locally
     app.run(host="0.0.0.0", port=5000, debug=True)
-from flask import send_from_directory
 
