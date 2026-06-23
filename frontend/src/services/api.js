@@ -21,5 +21,9 @@ export const getAnalytics = async () => {
   const response = await api.get("/api/stats");
   return response.data;
 };
+export const getHistory = async () => {
+  const response = await api.get("/api/stats");
+  return response.data.history;
+};
 
 export default api;
