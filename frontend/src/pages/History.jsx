@@ -11,7 +11,15 @@ const History = () => {
     const fetchHistory = async () => {
       try {
         const data = await getHistory();
-        setRecords(data);
+        setRecords(
+  data.map(item => ({
+    id: item.id,
+    date: item.timestamp,
+    vehicle: item.plate_text,
+    type: item.violations?.[0]?.type || "No Violation",
+    conf: item.ocr_confidence || 0
+  }))
+);
         setLoading(false);
       } catch (err) {
         console.error("Failed to fetch history, using fallback data");
