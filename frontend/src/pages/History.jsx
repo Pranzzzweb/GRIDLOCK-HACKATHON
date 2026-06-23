@@ -17,7 +17,7 @@ const History = () => {
     date: item.timestamp,
     vehicle: item.plate_text,
     type: item.violations?.[0]?.type || "No Violation",
-    conf: item.ocr_confidence || 0
+    conf: item.ocr_confidence || 0,
   }))
 );
         setLoading(false);
